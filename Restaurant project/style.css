@@ -1,0 +1,790 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+
+}
+.row::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+[class*="col-"]{
+   float: left;
+   padding: 10px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+
+/* header start */
+header{
+    background-color: rgb(6, 92, 107);
+    padding:0% 1%;
+    text-align: center;
+    
+}
+.logo{
+    text-align: center;
+    transition:width 2s, transform 2s;
+    
+    
+}
+.logo img{
+    width: 150px;
+    padding: 20px;  
+}
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+/* seach bar */
+.search{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+   }
+   .search input[type=text] {
+       width: 50%;
+       padding: 5px;
+       font-size: 15px;
+       color: rgb(0, 0, 0);
+       border: none; 
+       transition: 1s;  
+       background-color:unset;
+       border-bottom: 2px white solid;
+   }
+   .search input[type=text]:hover{
+       width: 90%;
+   }
+   .search button{
+       padding: 3px;
+       background: none;
+       border: none;
+       color: white;
+   
+   }
+   .search button:hover{
+       
+       color: tomato;
+      
+   }
+/* seach bar END */
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    background-color: rgb(8, 97, 112);
+    margin: 30px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+nav ul li a:hover{
+    background-color: tomato;
+    
+}
+.log-bt{
+    text-align: center;
+    
+}
+
+  /* loging */
+
+.log-bt button{
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(216, 3, 3);
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    transition: 0.4s;
+}
+.log-bt button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 6px 0px white;
+}
+
+/* header END */
+
+/* banner start */
+.banner-part{
+    background-image: url("img/back\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+.banner-cont{
+    text-align: center;
+    padding: 110px 20px ;
+}
+.banner{
+    text-align: center;
+    
+}
+.banner-cont h1{
+    width: 50%;
+    background-color: rgb(6, 92, 107);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+}
+.banner-cont p{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.banner-cont .btnt{
+    
+    /* text-align: center; */
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 5px;
+    transition: .3s;
+    
+}
+.btnt:hover{
+    transform: scale(1.1);
+}
+
+/* banner END */
+
+/* abut us section strat */
+.about-us{
+ padding: 1%;
+}
+.abut-us-contents{
+    text-align: center;
+
+}
+.abut-us-contents h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.abut-us-contents p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* abut us section END */
+
+/* food manu sec start */
+
+.food-manu-part{
+    padding: 1%;
+
+}
+.card{
+    padding: 20px;
+    
+    
+
+}
+.card-body{
+    text-align: center;
+    transition: 0.4s;
+    
+}
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    
+   
+
+
+
+   
+}
+.itm-dic{
+    background-color: rgb(6, 92, 107);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 300;
+        
+    
+}
+.itm-dic h2{
+    background-color: rgb(163, 3, 163);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+
+}
+.itm-dic > p{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font: bold;
+    font-size: 20px;
+    
+}
+.card-body:hover{
+    transform: scale(1.1);
+    
+  /* border: 4px solid black;
+  border-bottom: none; */
+
+  /* box-shadow: 1px 3px 5px 2px ; */
+
+}
+/* food manu sec End */
+
+
+     /* contact section */
+     #contact{
+         background-color: rgb(124, 124, 124);
+         padding: 1%;
+     }
+     .img{
+         width: 100%;
+         height: 300px;
+     }
+     .cont-deatil{
+         text-align: center;
+         color: white;
+         padding: 20px;
+
+     }
+     .cont-deatil p{
+        
+     }
+     /* contact section END */
+
+     /* footer section start */
+     .footer{
+         background-color: rgb(49, 49, 49);
+     }
+     .fiverr{
+         width: 25px;
+     }
+     .foot-left h3{
+         text-align: center;
+         color: rgb(255, 255, 255);
+         font-size: 25px;
+     }
+     .arrow{
+         text-align: center;
+         padding: 10px;
+         font-size: 20px;
+         margin-top: 20px;
+         
+     }
+     .arrow a{
+         
+        border: 2px white solid;
+        border-radius: 100%;
+        padding: 10px;
+
+         
+     }
+     .arrow a:hover{
+         background-color: grey;
+         
+     }
+     .cont-btn{
+         text-align: center;
+
+     }
+     .cont-btn button{
+         margin: 20px;
+        padding: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    .btn{
+        text-align: center;
+    }
+    .cont-btn .btn{
+        background-color: unset;
+        
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        border-radius: 100%;
+        padding: 5px;
+        margin: 10px;
+
+        width: 50px;
+        height: 50px;
+        text-align: center;
+
+        transition:width 2s, transform 2s;
+    }
+    
+    .cont-btn .btn:hover{
+        background-color: rgb(92, 92, 92);
+        transform: rotate(360deg);
+        
+    }
+
+    .footer::after{
+         clear: both;
+         display: table;
+         content: '';
+     }
+
+     /* footer section END */
+
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media (min-width:576px){
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    
+    .col-sm-3 {
+        width: 25%;
+    }
+    
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    
+    .col-sm-6 {
+        width: 50%;
+    }
+    
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    
+    .col-sm-9 {
+        width: 75%;
+    }
+    
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media (min-width:768px){
+
+
+     /* header Start */
+
+     .logo{
+        text-align: left;
+        
+    }
+    .logo img{
+        width:60px;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    /* seach bar */
+.search{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+   }
+   .search input[type=text] {
+       width: 40%;
+       
+   }
+   .search input[type=text]:hover{
+       width: 80%;
+   }
+   .search button{
+       
+   
+   }
+   .search button:hover{
+       
+       color: tomato;
+      
+   }
+/* seach bar END */
+    nav ul{
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+       display: inline-block;
+       background-color: transparent;
+       padding: 8px;
+       border-radius: unset;
+       transition: .5s;
+       margin: 0px;
+       margin-top: 10px;
+ }
+
+ nav ul li a:hover{
+     background-color: unset;
+     transform: scale(1.2);
+     text-decoration: underline rgb(247, 0, 0);
+     
+ }
+ .log-bt{
+     text-align: left;
+    
+
+ }
+ .log-bt button{
+    background-color:unset;
+    padding: 5px;
+    margin-top: 13px;
+    text-align: center;
+
+ }
+ .log-bt button:hover{
+    box-shadow:unset;
+    color: rgb(208, 255, 0);
+}
+
+ /* footer START */
+ .foot-left h3{
+    text-align: right;
+    margin-top: 30px;
+   
+}
+.arrow{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+   
+    
+}
+/* footer END */
+
+
+
+    
+   
+
+
+
+
+
+
+    .col-md-1 {
+        width: 8.33%;
+    }
+    
+    .col-md-2 {
+        width: 16.66%;
+    }
+    
+    .col-md-3 {
+        width: 25%;
+    }
+    
+    .col-md-4 {
+        width: 33.33%;
+    }
+    
+    .col-md-5 {
+        width: 41.66%;
+    }
+    
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .col-md-7 {
+        width: 58.33%;
+    }
+    
+    .col-md-8 {
+        width: 66.66%;
+    }
+    
+    .col-md-9 {
+        width: 75%;
+    }
+    
+    .col-md-10 {
+        width: 83.33%;
+    }
+    
+    .col-md-11 {
+        width: 91.66%;
+    }
+    
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width:992px){
+
+    /* header Start */
+
+    .logo{
+        text-align: left;
+        
+    }
+    .logo img{
+        width:70px;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    .search{
+
+        text-align: left;
+    }
+    .search input{
+
+    }
+    .search button{
+
+    }
+    nav ul{
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+       display: inline-block;
+       background-color: transparent;
+       padding: 10px;
+       border-radius: unset;
+       transition: .5s;
+       margin: 10px;
+ }
+
+ nav ul li a:hover{
+     background-color: unset;
+     transform: scale(1.2);
+     text-decoration: underline rgb(247, 0, 0);
+     
+ }
+ .log-bt{
+     text-align: left;
+    
+
+ }
+ .log-bt button{
+    background-color:unset;
+    padding: 5px;
+    margin-top: 13px;
+    text-align: center;
+
+ }
+ .log-bt button:hover{
+    box-shadow:unset;
+    color: rgb(208, 255, 0);
+}
+
+ /* header END */
+
+ /* banner part */
+ .banner-part{
+     position: relative;
+     height: 100vh;
+ }
+ .banner-cont{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+
+     transform: translate(-50%,-50%);
+ }
+ .banner-cont h1{
+     font-size: 60px;
+     width: 600px;
+ }
+ .banner-cont p{
+   width: 900px;
+   font-size: 40px;
+ }
+ 
+ /* banner part END */
+
+
+    /* food manu sec start */
+
+.food-manu-part{
+    padding: 1%;
+
+}
+.card{
+    padding: 10px;
+    
+    
+
+}
+.card-body{
+   
+    
+}
+.card-body img{
+    
+
+   
+}
+.itm-dic{
+    background-color: rgb(6, 92, 107);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 300;
+        
+    
+}
+.itm-dic h2{
+   
+
+}
+.itm-dic > p{
+    
+    
+}
+.card-body:hover{
+    
+    
+  /* border: 4px solid black;
+  border-bottom: none; */
+
+  /* box-shadow: 1px 3px 5px 2px ; */
+
+}
+/* food manu sec End */
+
+
+
+       /* footer START */
+       .foot-left h3{
+           text-align: left;
+           margin-top: 20px;
+          
+       }
+       .arrow{
+           text-align: left;
+           margin-left: 50px;
+           margin-top: 20px;
+          
+           
+       }
+       .cont-btn{
+           text-align: right;
+           margin-right: 50px;
+       }
+
+       /* footer END */
+
+
+
+
+
+
+
+
+    .col-ld-1 {
+        width: 8.33%;
+    }
+    
+    .col-ld-2 {
+        width: 16.66%;
+    }
+    
+    .col-ld-3 {
+        width: 25%;
+    }
+    
+    .col-ld-4 {
+        width: 33.33%;
+    }
+    
+    .col-ld-5 {
+        width: 41.66%;
+    }
+    
+    .col-ld-6 {
+        width: 50%;
+    }
+    
+    .col-ld-7 {
+        width: 58.33%;
+    }
+    
+    .col-ld-8 {
+        width: 66.66%;
+    }
+    
+    .col-ld-9 {
+        width: 75%;
+    }
+    
+    .col-ld-10 {
+        width: 83.33%;
+    }
+    
+    .col-ld-11 {
+        width: 91.66%;
+    }
+    
+    .col-ld-12 {
+        width: 100%;
+    }
+}
